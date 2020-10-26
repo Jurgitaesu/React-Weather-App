@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  background: url("assets/sky.jpg") center center no-repeat;
+  background-size: cover;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/************** Title component ******************/
+
+.title__margin {
+  margin-top: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title__color {
+  color: #164C6E;
+}
+
+.title__size {
+  font-size: 60px;
+}
+
+/**************** SearchBar component ****************/
+
+.radius {
+  border-radius: 20px !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn__custom {
+  background-color: #8d94e0 !important;
+  color: #FFFFFF !important;
+  border-radius: 20px !important;
+  transition: 0.2s;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn__custom:focus {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  outline: none;
+}
+
+/**************** Current Weather component ************/
+
+.font__color {
+  color: #164C6E;
+}
+
+.text__size {
+  font-size: 80px;
+}
+
+.img__size {
+  width: 150px;
+}
+
+/***************** Forecast component ******************/
+
+.box__color {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
